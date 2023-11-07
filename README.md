@@ -30,6 +30,7 @@ git add README.md
 git commit -m "create folder development"
 
 # Об'єднайте зміни з гілки "development" у гілку "main".
+git rebase main
 
 # Перевірте статус, переконайтеся, що все актуально.
 git status
