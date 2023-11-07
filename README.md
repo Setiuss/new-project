@@ -13,6 +13,8 @@ sl .\new-project\
 New-Item -ItemType File -Path .\README.md
 
 # Підготуйте файл "README.md" до коміту.
+git add README.md
+
 # Закомітьте зміни у репозиторій з коміт повідомленням “init”.
 git commit -m "init"
 
@@ -21,8 +23,10 @@ New-Item -ItemType Directory -Path .\development
 sl .\development\
 
 # Додайте інструкцію до файлу "README.md" і підготуйте їх до коміту.
-# Закомітьте зміни у гілці "development" з повідомленням про коміт.
+sl ..
 git add README.md
+
+# Закомітьте зміни у гілці "development" з повідомленням про коміт.
 git commit -m "create folder development"
 
 # Об'єднайте зміни з гілки "development" у гілку "main".
